@@ -8,9 +8,9 @@ const Form = z.object({
   //             ^ 🕵️‍♂️
   phoneNumber: z.string().optional(),
   //                    ^ 🕵️‍♂️
-  email: z.string(),
+  email: z.string().email(),
   //              ^ 🕵️‍♂️
-  website: z.string().optional(),
+  website: z.string().url().optional(),
   //                ^ 🕵️‍♂️
 });
 
